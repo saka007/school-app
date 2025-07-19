@@ -1,0 +1,222 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3    Copyright 2019 Google Inc. All Rights Reserved.
+4
+5     Licensed under the Apache License, Version 2.0 (the "License");
+6     you may not use this file except in compliance with the License.
+7     You may obtain a copy of the License at
+8
+9         http://www.apache.org/licenses/LICENSE-2.0
+10
+11     Unless required by applicable law or agreed to in writing, software
+12     distributed under the License is distributed on an "AS IS" BASIS,
+13     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14     See the License for the specific language governing permissions and
+15     limitations under the License.
+16-->
+17<!--
+18 The "package" attribute is rewritten by the Gradle build with the value of applicationId.
+19     It is still required here, as it is used to derive paths, for instance when referring
+20     to an Activity by ".MyActivity" instead of the full name. If more Activities are added to the
+21     application, the package attribute will need to reflect the correct path in order to use
+22     the abbreviated format.
+23-->
+24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+25    package="xyz.appmaker.cngpmo"
+26    android:versionCode="1"
+27    android:versionName="1" >
+28
+29    <uses-sdk
+30        android:minSdkVersion="19"
+30-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml
+31        android:targetSdkVersion="29" />
+31-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml
+32
+33    <queries>
+33-->[com.google.androidbrowserhelper:androidbrowserhelper:1.3.2] /root/.gradle/caches/transforms-2/files-2.1/ce3213dae9639c0fada057349098ffd4/androidbrowserhelper-1.3.2/AndroidManifest.xml:26:5-34:15
+34        <intent>
+34-->[com.google.androidbrowserhelper:androidbrowserhelper:1.3.2] /root/.gradle/caches/transforms-2/files-2.1/ce3213dae9639c0fada057349098ffd4/androidbrowserhelper-1.3.2/AndroidManifest.xml:27:9-33:18
+35            <action android:name="android.intent.action.VIEW" />
+35-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:81:17-68
+35-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:81:25-66
+36
+37            <category android:name="android.intent.category.BROWSABLE" />
+37-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:83:17-77
+37-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:83:27-75
+38
+39            <data android:scheme="https" />
+39-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:84:17-85:54
+39-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:84:23-45
+40        </intent>
+41    </queries>
+42
+43    <application
+43-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:27:5-117:19
+44        android:allowBackup="true"
+44-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:28:9-35
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/03736cf4bc3669a69d502627b70a527e/core-1.1.0/AndroidManifest.xml:24:18-86
+46        android:icon="@mipmap/ic_launcher"
+46-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:29:9-43
+47        android:label="@string/appName"
+47-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:30:9-40
+48        android:supportsRtl="true"
+48-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:31:9-35
+49        android:theme="@style/Theme.LauncherActivity" >
+49-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:32:9-54
+50        <meta-data
+50-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:34:9-36:58
+51            android:name="asset_statements"
+51-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:35:13-44
+52            android:resource="@string/assetStatements" />
+52-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:36:13-55
+53        <meta-data
+53-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:40:9-42:52
+54            android:name="twa_generator"
+54-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:41:13-41
+55            android:value="@string/generatorApp" />
+55-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:42:13-49
+56
+57        <activity
+57-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:44:9-87:20
+58            android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
+58-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:44:19-90
+59            android:label="@string/launcherName" >
+59-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:45:13-49
+60            <meta-data
+60-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:46:13-47:53
+61                android:name="android.support.customtabs.trusted.DEFAULT_URL"
+61-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:46:24-85
+62                android:value="@string/launchUrl" />
+62-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:47:17-50
+63            <meta-data
+63-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:49:13-51:58
+64                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR"
+64-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:50:17-83
+65                android:resource="@color/colorPrimary" />
+65-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:51:17-55
+66            <meta-data
+66-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:53:13-55:61
+67                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR"
+67-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:54:17-87
+68                android:resource="@color/navigationColor" />
+68-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:55:17-58
+69            <meta-data
+69-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:57:13-58:54
+70                android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
+70-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:57:24-95
+71                android:resource="@drawable/splash" />
+71-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:58:17-52
+72            <meta-data
+72-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:60:13-61:60
+73                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
+73-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:60:24-104
+74                android:resource="@color/backgroundColor" />
+74-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:61:17-58
+75            <meta-data
+75-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:63:13-64:71
+76                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
+76-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:63:24-105
+77                android:value="@integer/splashScreenFadeOutDuration" />
+77-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:64:17-69
+78            <meta-data
+78-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:66:13-67:60
+79                android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
+79-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:66:24-97
+80                android:value="@string/providerAuthority" />
+80-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:67:17-58
+81            <meta-data
+81-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:69:13-97
+82                android:name="android.app.shortcuts"
+82-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:69:24-60
+83                android:resource="@xml/shortcuts" />
+83-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:69:61-94
+84            <meta-data
+84-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:71:13-72:56
+85                android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
+85-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:71:24-91
+86                android:value="@string/fallbackType" />
+86-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:72:17-53
+87
+88            <intent-filter>
+88-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:75:13-78:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:76:17-69
+89-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:76:25-66
+90
+91                <category android:name="android.intent.category.LAUNCHER" />
+91-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:77:17-77
+91-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:77:27-74
+92            </intent-filter>
+93            <intent-filter android:autoVerify="true" >
+93-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:80:13-86:29
+93-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:80:28-53
+94                <action android:name="android.intent.action.VIEW" />
+94-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:81:17-68
+94-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:81:25-66
+95
+96                <category android:name="android.intent.category.DEFAULT" />
+96-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:82:17-76
+96-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:82:27-73
+97                <category android:name="android.intent.category.BROWSABLE" />
+97-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:83:17-77
+97-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:83:27-75
+98
+99                <data
+99-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:84:17-85:54
+100                    android:host="@string/hostName"
+100-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:85:21-52
+101                    android:scheme="https" />
+101-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:84:23-45
+102            </intent-filter>
+103        </activity>
+104        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+104-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:89:9-90
+104-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:89:19-87
+105        <activity
+105-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:91:9-92:62
+106            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+106-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:91:19-97
+107            android:configChanges="orientation|screenSize" />
+107-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:92:13-59
+108
+109        <provider
+109-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:94:9-102:20
+110            android:name="androidx.core.content.FileProvider"
+110-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:95:13-62
+111            android:authorities="@string/providerAuthority"
+111-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:96:13-60
+112            android:exported="false"
+112-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:98:13-37
+113            android:grantUriPermissions="true" >
+113-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:97:13-47
+114            <meta-data
+114-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:99:13-101:53
+115                android:name="android.support.FILE_PROVIDER_PATHS"
+115-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:100:17-67
+116                android:resource="@xml/filepaths" />
+116-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:101:17-50
+117        </provider>
+118
+119        <service
+119-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:104:9-115:20
+120            android:name="com.google.androidbrowserhelper.trusted.DelegationService"
+120-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:105:13-85
+121            android:enabled="@bool/enableNotification"
+121-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:106:13-55
+122            android:exported="@bool/enableNotification" >
+122-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:107:13-56
+123            <intent-filter>
+123-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:111:13-114:29
+124                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+124-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:112:17-105
+124-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:112:25-103
+125
+126                <category android:name="android.intent.category.DEFAULT" />
+126-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:82:17-76
+126-->/pwa2apk/tmp/app/src/main/AndroidManifest.xml:82:27-73
+127            </intent-filter>
+128        </service>
+129    </application>
+130
+131</manifest>
